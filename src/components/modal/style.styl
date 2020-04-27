@@ -70,14 +70,17 @@ body
 .main
     &__container
         max-width: 1660px
-        display: flex
-        justify-content: space-between
-        align-items: center
+        display: block
         margin: 0 auto
 
 
 .title
     display block
+
+    font-size: 27px
+    line-height: normal
+    color: #000000
+    font-weight: 400
 
     &__big
         font-size: 46px
@@ -93,6 +96,9 @@ body
         font-weight: 400
 
 .block
+    display: flex
+    justify-content: space-between
+
     &__left
         max-width 930px
 
@@ -103,3 +109,22 @@ body
             display: flex
             align-items: center
             justify-content:    space-between
+
+.podcasts
+
+    &__ul
+        display: flex
+        align-items: stretch
+
+.curso
+    &__ul
+        display: flex
+        align-items: stretch
+
+.newsletter
+    background-color: #9c6b80;
+
+
+.footer
+    background-color: #b3799f;
+
