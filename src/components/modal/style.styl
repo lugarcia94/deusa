@@ -95,6 +95,12 @@ body
         color: #000000
         font-weight: 400
 
+    &__vitrine
+        display: block
+        text-align: center
+        margin-bottom 30px
+        text-decoration: underline
+
 .block
     display: flex
     justify-content: space-between
@@ -117,35 +123,168 @@ body
         max-width 300px
 
 .podcasts
+    margin: 30px 0
 
     &__ul
         display: flex
         align-items: stretch
+        justify-content: space-between
+
+    &__item
+        flex: 0 0 320px
 
 .curso
+    margin: 30px 0
+
     &__ul
         display: flex
         align-items: stretch
+        justify-content: space-between
+
+    &__item
+        flex: 0 0 320px
+
+.price
+    background-color: #79105a
+    margin-top: -4px
+    text-align: center
+    padding: 5px 0
+    margin-bottom 10px
+
+    span 
+        font-size: 25px
+        letter-spacing: 1px
+        line-height: normal
+        color: #ecc6e4
+        font-weight: 400
 
 .newsletter
     background-color: #9c6b80
 
     &__title
-        font-size: 18px
+        font-size: 15px
         letter-spacing: 7px
         line-height: normal
         color: #ecc6e4
         font-weight: 500
 
     &__description
-        font-size: 50px
+        font-size: 30px
         letter-spacing: 3px
         line-height: normal
         color: #ecc6e4
         font-weight: 500
         text-align: center
 
+    &__content
+        display: block
+        text-align: center
+        max-width 900px
+        margin: 0 auto
+        padding: 15px
+
+.sociais
+    margin: 30px 0
+
+    &__title
+        display: block
+        font-size: 35px
+        letter-spacing: 4px
+        line-height: normal
+        color: #460f48
+        font-weight: 500
+        text-align: center
 
 .footer
     background-color: #b3799f
+    padding: 30px 0
 
+    &__container
+        max-width: 1660px
+        margin: 0 auto
+        display: block
+
+    &__content
+        border-bottom: solid 1px #ecc6e4
+        margin-bottom 15px
+        padding-bottom 15px
+
+    &__title
+        display: block
+        font-size: 21px
+        line-height: normal
+        color: #ecc6e4
+        font-weight: 500
+     
+    &__link
+        font-size: 21px
+        line-height: normal
+        color: #ecc6e4
+        font-weight: 500
+
+@media (max-width:992px)
+    .header
+        display: none
+
+    .main
+        &__container
+            padding: 0 15px
+
+    .title
+        &__big
+            font-size: 30px
+            
+    .block
+        flex-wrap: wrap
+        justify-content: center
+
+        &__left 
+            max-width: none
+            flex: 0 0 100%
+            width: 100%
+
+            &--bottom
+                flex-wrap: wrap
+
+        &__center
+            flex: 1    
+            max-width none
+
+            ul
+                display: flex
+                flex-wrap: wrap
+
+                li
+                    flex: 0 0 50%
+                    padding: 7px
+
+        &__right
+            flex: 0 0 100%
+            max-width none
+
+            ul
+                display: flex
+                flex-wrap: wrap
+
+                li
+                    flex: 0 0 50%
+                    padding: 7px
+
+    .podcasts
+        &__ul
+            flex-wrap: wrap
+
+    .curso
+        &__ul
+            flex-wrap: wrap
+
+    .newsletter
+        background-color: #9c6b80
+        box-shadow: 300px 0  0 #9c6b80, -300px 0 0 #9c6b80
+
+    .footer
+        background-color: #b3799f
+     
+
+        &__container
+            padding: 0 15px
