@@ -116,6 +116,9 @@ body
             align-items: center
             justify-content:    space-between
 
+        &--top
+            margin-bottom 50px
+
     &__center
         max-width 280px
 
@@ -160,7 +163,9 @@ body
 
 .newsletter
     background-color: #9c6b80
-
+    box-shadow: 900px 0  0 #9c6b80, -900px 0 0 #9c6b80
+    padding: 50px 0
+    
     &__title
         font-size: 15px
         letter-spacing: 7px
@@ -288,3 +293,15 @@ body
 
         &__container
             padding: 0 15px
+
+
+@media (min-width : 993px)
+    .block
+        &__right
+            &--item
+                margin-bottom 50px
+        
+        &__center
+            ul
+                li
+                    margin-bottom 30px
