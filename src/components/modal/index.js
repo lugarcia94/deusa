@@ -1,1 +1,9 @@
 import './style';
+
+jQuery('.menu-btn').on('click', function () {
+    if (!jQuery(this).parent().parent().hasClass('navigation')) {
+        jQuery(this).parent().parent().addClass('navigation__open');
+    } else {
+        jQuery(this).parent().parent().removeClass('navigation__open');
+    }
+});
