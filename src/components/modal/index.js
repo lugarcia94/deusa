@@ -7,3 +7,7 @@ jQuery('.menu-btn').on('click', function () {
         jQuery(this).parent().parent().removeClass('navigation__open');
     }
 });
+
+jQuery('.menu-btn__close').on('click', function () {
+    jQuery(this).parent().parent().removeClass('navigation__open');
+});

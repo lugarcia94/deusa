@@ -136,7 +136,7 @@ body
 
         &--content
             max-width 340px
-            
+
             .title
                 margin-bottom 20px
 
@@ -273,8 +273,24 @@ body
         color: #ecc6e4
         font-weight: 500
 
+    &__social
+        display: block
+
+        a, span 
+            display: block
+
+            font-size: 18px
+            line-height: normal 
+            color: #ecc6e4
+            margin-bottom 3px
+
+    &__block
+        display: flex
+        align-items: stretch
+    
     &__ul
-        column-count: 4
+        flex: 1
+
 
 .content
     display: flex
@@ -347,6 +363,7 @@ body
         &__right
             flex: 0 0 100%
             max-width none
+            margin-top 40px
 
             ul
                 display: flex
@@ -360,9 +377,18 @@ body
         &__ul
             flex-wrap: wrap
 
+        &__item
+            padding: 15px 
+            flex: 0 0 50%
+    
+
     .curso
         &__ul
             flex-wrap: wrap
+
+        &__item
+            padding: 15px 
+            flex: 0 0 50%
 
     .newsletter
         background-color: #9c6b80
@@ -420,7 +446,12 @@ body
         &__right
             margin-top 30px
 
+    .full-banner 
+        margin-bottom 40px
+
+
 @media (min-width : 993px)
+
     .block
         &__right
             &--item
@@ -461,3 +492,7 @@ body
 
             &::placeholder
                 font-size: 19px
+
+    .footer
+        &__ul
+            column-count: 4
