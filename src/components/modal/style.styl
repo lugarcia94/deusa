@@ -5,12 +5,12 @@ body
     background: #79105a
 
     &__container
-        max-width: 1660px
+        max-width: 1330px
         display: flex
         justify-content: space-between
         align-items: center
         margin: 0 auto
-
+        padding: 0 15px
 .menu
 
     &__item
@@ -56,24 +56,26 @@ body
 
 .main
     &__container
-        max-width: 1660px
+        max-width: 1330px
         display: block
         margin: 0 auto
-        padding-top: 10px
+        padding: 10px 15px 0
 
 .title
     display block
-
+    font-family: 'Eczar', serif;
     font-size: 25px
-    line-height: normal
+    line-height: 1
     color: #000000
     font-weight: 400
 
     &__big
         font-size: 46px
-        line-height: normal
+        line-height: 1
         color: #000000
         font-weight: 600
+        font-family: 'Eczar', serif;
+
 
     &__small
         font-size: 16px
@@ -86,33 +88,40 @@ body
         display: block
         text-align: center
         margin-bottom 30px
+
+        font-family: 'Work Sans', sans-serif
+        text-transform: uppercase
+        letter-spacing: 8px;
+        font-weight: 400;
         text-decoration: underline
 
+      
     &__depoimentos
         display: block
         font-size: 25px;
         letter-spacing: 8px;
         line-height: normal;
         color: #000000;
-        font-weight: 600;
+        font-weight: 400;
         text-transform: uppercase
         margin-bottom: 30px
+        font-family: 'Work Sans', sans-serif
 
         &:before
             content: ''
             display: block
             width 100%
-            height 2px
+            height 1px
             background: #000
 .block
     display: flex
     justify-content: space-between
 
     &__left
-        max-width 930px
+        max-width 720px
 
         .title
-            margin-bottom: 15px
+            margin-bottom: 30px
 
         &--bottom
             display: flex
@@ -122,14 +131,21 @@ body
         &--top
             margin-bottom 50px
 
+            img
+                margin-bottom 30px
+
+        &--content
+            .title
+                margin-bottom 20px
+
     &__center
-        max-width 280px
+        max-width 250px
 
     &__right
-        max-width 300px
+        max-width 260px
 
 .podcasts
-    margin: 30px 0
+    margin: 130px 0
 
     &__ul
         display: flex
@@ -137,7 +153,11 @@ body
         justify-content: space-between
 
     &__item
-        flex: 0 0 320px
+        flex: 0 0 25%
+        padding: 0 15px
+
+    .title__vitrine
+        margin-bottom 80px
 
 .curso
     margin: 30px 0
@@ -148,7 +168,11 @@ body
         justify-content: space-between
 
     &__item
-        flex: 0 0 320px
+        flex: 0 0 25%
+        padding: 0 15px
+    
+    .title__vitrine
+        margin-bottom 80px
 
 .price
     background-color: #79105a
@@ -170,6 +194,7 @@ body
     padding: 50px 0
     
     &__title
+        font-family: 'Work Sans', sans-serif
         font-size: 15px
         letter-spacing: 7px
         line-height: normal
@@ -190,6 +215,19 @@ body
         max-width 900px
         margin: 0 auto
         padding: 15px
+        font-family: 'Eczar', serif;
+
+.full-banner
+    margin-bottom 120px
+
+.home-banner
+    margin-top : 50px
+
+.flag
+    display: inline-block
+    background: #79105A
+    color: #ECC6E4
+    padding: 10px 30px
 
 .sociais
     margin: 30px 0
@@ -202,15 +240,18 @@ body
         color: #460f48
         font-weight: 500
         text-align: center
+        font-family: 'Eczar', serif;
+
 
 .footer
     background-color: #b3799f
     padding: 30px 0
 
     &__container
-        max-width: 1660px
+        max-width: 1330px
         margin: 0 auto
         display: block
+        padding: 0 15px
 
     &__content
         border-bottom: solid 1px #ecc6e4
@@ -230,19 +271,34 @@ body
         color: #ecc6e4
         font-weight: 500
 
+    &__ul
+        column-count: 4
+
 .content
     display: flex
     align-items: flex-start
     justify-content: space-between
 
     &__left
-        max-width 1320px
+        padding-right: 50px
+
+        img
+            margin-bottom 30px
+
 
     &__right
         max-width 290px
         
         &--item
             margin-bottom 30px
+
+    .title__big
+        margin-bottom 60px
+
+    &__title
+        font-size: 33px
+        line-height: normal
+        font-family: 'Work Sans', sans-serif
 
 @media (max-width:992px)
     .header
@@ -377,12 +433,13 @@ body
     .navigation
 
         &__container
-            max-width: 1660px
+            max-width: 1330px
             display: flex
             justify-content: space-between
             align-items: center
             margin: 0 auto
             border-top: 1px solid #fff
+            padding: 0 15px
 
     .menu
         &__ul
